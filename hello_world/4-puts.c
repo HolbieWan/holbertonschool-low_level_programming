@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
-* Declaration de la variable principale main:
+* main: declaration de la variable principale :
 */
 int main(void)
 {
