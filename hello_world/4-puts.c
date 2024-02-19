@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* main - main fonction that prints the text "Programming is like building a multilingual puzzle
+* main - main fonction that prints the text
 * return 0 if no problem
 */
 int main(void)
