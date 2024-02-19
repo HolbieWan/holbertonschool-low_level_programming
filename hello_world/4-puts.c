@@ -9,5 +9,5 @@ int main(void)
 
 	puts(my_char);
 
-	return (0);it add .
+	return (0);
 }
