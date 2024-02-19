@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+* main - main fonction that prints the text
+* Return: 0 if no problem
+*/
 int main(void)
 {
 	int n;
