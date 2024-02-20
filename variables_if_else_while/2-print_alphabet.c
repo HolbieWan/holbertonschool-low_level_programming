@@ -1,5 +1,5 @@
 #include <stdio.h>
-/* Find the last digit */
+/* Print alphabet */
 
 /**
 * main - main fonction that prints the text
@@ -8,12 +8,12 @@
 
 int main(void)
 {
-	char alphabet[] = "ABCDEFGHIJKLMNOP\n";
+	char alphabet[] = "abcdefghigklmnopqrstuvwxyz\n";
 
-	for (int i = 0; ma_chaine[i] != '\0'; i++)
+	for (int i = 0; alphabet[i] != '\0'; i++)
 	{
-        putchar(ma_chaine[i]);
-    }
+		putchar(alphabet[i]);
+	}
 
-	return 0;
+	return (0);
 }
