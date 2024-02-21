@@ -1,5 +1,6 @@
-#include <stdio.h>
-/* Print alphabet */
+#include "main.h"
+/* Print: _putchar */
+/*Déclaration des fonctions*/
 
 /**
 * main - main fonction that prints the text
@@ -8,17 +9,14 @@
 
 int main(void)
 {
-	putchar(95);
-	putchar(112);
-	putchar(117);
-	putchar(116);
-	putchar(99);
-	putchar(116);
-	putchar(104);
-	putchar(97);
-	putchar(114);
-
-	putchar('\n');
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 
 	return (0);
 }
