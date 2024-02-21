@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-*_isalpha - fonction that prints the sign of a number.
-** @c: The character to print
+*_print_sign - fonction that prints the sign of a number.
+** @n: The character to print
 * Return: On success 1.
 *On error, -1 is returned, and errno is set appropriately.
 */
