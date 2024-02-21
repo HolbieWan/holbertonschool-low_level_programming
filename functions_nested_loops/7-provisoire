@@ -1,0 +1,21 @@
+if (r > 0)
+	{
+	r = r % 10;
+	_putchar('0' + r);
+	}
+	if(r == 0)
+	{
+	r = 0;
+	_putchar('0' + r);
+	return(r);
+	}
+	if (r < 0)
+	{
+	r = _abs(r) % 10;
+	_putchar('0' + r);
+	return (r);
+	}
+	if (r == -2147483648)
+	{
+	r = _abs(r) % 10;
+	_putchar('0' + r);

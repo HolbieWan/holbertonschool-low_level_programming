@@ -11,29 +11,16 @@
 
 int print_last_digit(int r)
 {
-	if (r > 0)
+	if (r == INT_MIN)
 	{
-	r = r % 10;
-	_putchar('0' + r);
+		r = 8;
+		return (r);
 	}
-	if(r == 0)
+	else
 	{
-	r = 0;
-	_putchar('0' + r);
-	return(r);
+		r = _abs(r) % 10;
+		_putchar('0' + r);
+		return (r);
 	}
-	if (r < 0)
-	{
-	r = _abs(r) % 10;
-	_putchar('0' + r);
 	return (r);
-	}
-	if (r == -2147483648)
-	{
-	r = _abs(r) % 10;
-	_putchar('0' + r);
-	return (r);
-	}
-
-	return(r);
 }
