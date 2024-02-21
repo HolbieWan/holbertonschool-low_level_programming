@@ -17,6 +17,10 @@ void print_alphabet_x10(void)
 	}
 }
 
+/**
+*print_alphabet - fonction that prints the alphabet 1 time
+* Return: void
+*/
 void print_alphabet(void)
 {
 	char i;
