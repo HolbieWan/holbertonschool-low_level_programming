@@ -2,10 +2,8 @@
 /* Print alphabet in lower case */
 
 /**
-* void print_alphabet(void): fonction that prints the text
-* Return: 0 if no problem
+* funtion: void print_alphabet(void): fonction that prints the alphabet
 */
-
 void print_alphabet(void)
 {
 	char i;
