@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-*print_sign - fonction that prints the sign of a number.
-** @n: The character to print
+*_abs - fonction that computes the absolute value of an integer.
+** @r: The character to print
 * Return: On success 1.
 *On error, -1 is returned, and errno is set appropriately.
 */
