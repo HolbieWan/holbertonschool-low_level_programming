@@ -2,7 +2,7 @@
 /* Print alphabet in lower case */
 
 /**
-* main - main fonction that prints the text
+* void print_alphabet(void): fonction that prints the text
 * Return: 0 if no problem
 */
 
