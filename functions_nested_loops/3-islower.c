@@ -3,7 +3,9 @@
 
 /**
 *_islower - fonction that checks for lowercase character
-* Return: void
+** @c: The character to print
+* Return: On success 1.
+*On error, -1 is returned, and errno is set appropriately.
 */
 
 int _islower(int c)
