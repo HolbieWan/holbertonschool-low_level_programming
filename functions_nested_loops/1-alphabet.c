@@ -1,8 +1,10 @@
 #include "main.h"
-/* Print alphabet in lower case */
+/*
+/** Print alphabet in lower case */
+/*
 
 /**
-* funtion: void print_alphabet(void): fonction that prints the alphabet
+* void print_alphabet(void) - fonction that prints the alphabet
 */
 void print_alphabet(void)
 {
