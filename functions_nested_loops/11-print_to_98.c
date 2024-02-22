@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*add - fonction that adds two integers and returns the result.
+*print_to_98 - fonction that prints all natural numbers from n to 98
 *starting from 00:00 to 23:59.
 ** @n: The character to print
 * Return: On success (a + b).
