@@ -11,24 +11,18 @@ starting from 00:00 to 23:59.
 void jack_bauer(void)
 {
 	int hour;
-	int minute;
 
 	for (hour = 0; hour < 24 ; hour++)
 	{
-		int hour1 = hour / 10;
-		int hour2 = hour % 10;
+		int minute;
 
 		for (minute = 0; minute < 60 ; minute++)
 		{
-			int minute1 = minute / 10;
-			int minute2 = minute % 10;
-
-			_putchar('0' + hour1);
-			_putchar('0' + hour2);
+			_putchar(hour / 10);
+			_putchar(hour % 10);
 			_putchar(':');
-			_putchar('0' + minute1);
-			_putchar('0' + minute2);
-			_putchar('\n');
+			_putchar(minute / 10);
+			_putchar(minute % 10);
 		}
 	}
 }
