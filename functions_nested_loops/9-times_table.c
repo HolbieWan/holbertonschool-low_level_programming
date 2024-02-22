@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*jack_bauer - fonction that prints every minute of the day of Jack Bauer,
+*times_table - fonction that prints every minute of the day of Jack Bauer,
 ** @: The character to print
 * Return: On success 1.
 *On error, -1 is returned, and errno is set appropriately.
