@@ -32,7 +32,7 @@ int main(void)
 
 	printf("%lu\n", even_fibonacci_sum);
 
-	return 0;
+	return (0);
 }
 
 unsigned long int fibonacci(int n)
@@ -43,7 +43,7 @@ unsigned long int fibonacci(int n)
 	int i;
 
 	if (n == 1 || n == 2)
-		return 1;
+		return (1);
 
 	for (i = 3; i <= n; i++)
 	{
@@ -52,5 +52,5 @@ unsigned long int fibonacci(int n)
 		fibonacci_number2 = fibonacci_number_i;
 	}
 
-	return fibonacci_number_i;
+	return (fibonacci_number_i);
 }
