@@ -12,9 +12,9 @@ int main(void)
 	/*starting_number1 = 1;
 	strarting_number2 = 2;*/
 	int i;
-	unsigned long long int fibonacci_number1 = 1;
-	unsigned long long int fibonacci_number2 = 2;
-	unsigned long long int fibonacci_number_i;
+	long long int fibonacci_number1 = 1;
+	long long int fibonacci_number2 = 2;
+	long long int fibonacci_number_i;
 
 	printf("%lld, %lld, ", fibonacci_number1, fibonacci_number2);
 
