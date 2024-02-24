@@ -3,7 +3,8 @@
 /**
  * main - Fonction that computes and prints the sum of
  * all the multiples of 3 or 5 below n
- * @n: Le nombre limite
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 
 int main(void)
