@@ -18,7 +18,7 @@ int main(void)
 
 	printf("%ld, %ld, ", fibonacci_number1, fibonacci_number2);
 
-	for (i = 3; i < n - 2 ; i++)
+	for (i = 3; i <= n ; i++)
 	{
 		fibonacci_number_i = fibonacci_number1 + fibonacci_number2;
 		printf("%ld, ", fibonacci_number_i);
