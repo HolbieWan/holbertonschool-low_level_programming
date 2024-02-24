@@ -1,10 +1,8 @@
 #include <stdio.h>
 
 /**
- * fibonacci - Function that prints the first 50 Fibonacci numbers
  * main - Functiun that finds and prints the sum of the even-valued terms
- * @n: The number of occurences
- * Return: On success 1.
+ * Return: On success 0.
  * On error, -1 is returned, and errno is set appropriately.
  */
 
@@ -36,6 +34,13 @@ int main(void)
 
 	return (0);
 }
+
+/**
+ * fibonacci - Function that prints the first 50 Fibonacci numbers
+ * @n: The number of occurences
+ * Return: On success fibonacci_number_i.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
 
 unsigned long int fibonacci(int n)
 {
