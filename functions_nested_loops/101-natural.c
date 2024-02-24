@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - Fonction that computes and prints the sum of all the multiples of 3 or 5 below n
+ * main - Fonction that computes and prints the sum of
+ * all the multiples of 3 or 5 below n
  * @n: Le nombre limite
  */
 
@@ -21,7 +22,7 @@ int main(void)
 		}
 	}
 
-	printf ("%d\n", total);
+	printf("%d\n", total);
 
 	return (0);
 }
