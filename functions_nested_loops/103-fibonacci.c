@@ -2,6 +2,7 @@
 
 /**
  * main - Functiun that finds and prints the sum of the even-valued terms
+ * @n: The number of occurences
  * Return: On success 0.
  * On error, -1 is returned, and errno is set appropriately.
  */
