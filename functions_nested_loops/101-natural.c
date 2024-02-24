@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - Fonction that computes and prints the sum of all the multiples of 3 or 5 below n
+ * @n: Le nombre limite
+ */
+
 int main(void)
 {
 	int n = 1024;
