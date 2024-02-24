@@ -9,8 +9,6 @@
 int main(void)
 {
 	int n = 50;
-	/*starting_number1 = 1;
-	strarting_number2 = 2;*/
 	int i;
 	unsigned long int fibonacci_number1 = 1;
 	unsigned long int fibonacci_number2 = 2;
