@@ -10,7 +10,7 @@ unsigned long int fibonacci(int n);
 
 int main(void)
 {
-	int limit = 4000000;
+	unsigned long int limit = 4000000;
 	int n = 50;
 	int i;
 	unsigned long int even_fibonacci1_sum = 0;
@@ -35,12 +35,12 @@ int main(void)
 
 unsigned long int fibonacci(int n)
 {
-	if (n == 1 || n == 2)
-		return (1);
-
 	unsigned long int fibonacci_number1 = 1;
 	unsigned long int fibonacci_number2 = 2;
 	unsigned long int fibonacci_number_i;
+
+	if (n == 1 || n == 2)
+		return (1);
 
 	for (int i = 3; i <= n; i++)
 	{
