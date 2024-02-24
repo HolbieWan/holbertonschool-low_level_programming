@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_times_table - Fonction qui affiche la table de multiplication jusqu'à n.
+ * print_times_table - Fonction qui affiche la table de multiplication n
  * @n: Le nombre jusqu'auquel afficher la table de multiplication.
  */
 void print_times_table(int n)
@@ -12,7 +12,7 @@ void print_times_table(int n)
 		return;
 
 	for (num1 = 0; num1 <= n; num1++)
-    {
+	{
 		_putchar('0');
 
 		for (num2 = 1; num2 <= n; num2++)
