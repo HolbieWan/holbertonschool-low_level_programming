@@ -2,6 +2,8 @@
 
 /**
  * main - Fonctiun that finds and prints the sum of the even-valued terms
+ * fibonacci - Function that prints the first 50 Fibonacci numbers
+ * @n: The number of occurences
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */

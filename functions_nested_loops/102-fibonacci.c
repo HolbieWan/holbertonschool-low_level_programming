@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Fonctiun that prints the first 50 Fibonacci numbers
+ * main - Function that prints the first 50 Fibonacci numbers
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
