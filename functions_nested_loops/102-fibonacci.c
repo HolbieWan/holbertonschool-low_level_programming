@@ -16,12 +16,12 @@ int main(void)
 	unsigned long int fibonacci_number2 = 2;
 	unsigned long int fibonacci_number_i;
 
-	printf("%ld, %ld, ", fibonacci_number1, fibonacci_number2);
+	printf("%ld, %ld ", fibonacci_number1, fibonacci_number2);
 
 	for (i = 3; i <= n ; i++)
 	{
 		fibonacci_number_i = fibonacci_number1 + fibonacci_number2;
-		printf("%ld, ", fibonacci_number_i);
+		printf(",%ld ", fibonacci_number_i);
 		fibonacci_number1 = fibonacci_number2;
 		fibonacci_number2 = fibonacci_number_i;
 	}
