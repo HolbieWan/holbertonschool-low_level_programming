@@ -7,7 +7,7 @@
 *On error, O is returned, and errno is set appropriately.
 */
 
-void print_numbers2(void);
+void print_numbers(void);
 
 void more_numbers(void)
 {
@@ -16,7 +16,7 @@ void more_numbers(void)
 
 	while (i < 10)
 	{
-		print_numbers2();
+		print_numbers();
 
 		for (j = '0'; j <= '4'; j++)
 		{
@@ -25,22 +25,5 @@ void more_numbers(void)
 		}
 		i++;
 		_putchar('\n');
-	}
-
-}
-
-/**
-*print_numbers2 - fonction that prints the number from 0 to 9
-* Return: no return
-*On error, O is returned, and errno is set appropriately.
-*/
-
-void print_numbers2(void)
-{
-	char i;
-
-	for (i = 48; i <= 57; i++)
-	{
-		_putchar(i);
 	}
 }
