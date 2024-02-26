@@ -1,8 +1,11 @@
 #include "main.h"
 
 /**
-*print_square - fonction that prints a square
-**@size: input number
+*print_square - fonction that prints the numbers from 1 to 100,
+*followed by a new line. But for multiples of three print Fizz instead of the number
+* and for the multiples of five print Buzz.
+*For numbers which are multiples of both three and five print FizzBuzz.
+**@: input number
 * Return: no return
 *On error, O is returned, and errno is set appropriately.
 */
@@ -15,17 +18,17 @@ int main(void)
 
 	for (i = 2; i <= 100; i++)
 	{
-		if (i % 3 == 0)
+		if (i % 3 == 0 && i % 5 == 0)
 		{
-			printf(" Fizz");
+			printf(" FizzBuzz");
 		}
 		else if (i % 5 == 0)
 		{
 			printf(" Buzz");
 		}
-		else if (i % 3 && i % 5 == 0)
+		else if (i % 3 == 0)
 		{
-			printf(" Buzz");
+			printf(" Fizz");
 		}
 		else
 		{
