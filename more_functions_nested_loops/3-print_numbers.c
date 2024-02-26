@@ -3,7 +3,6 @@
 
 /**
 *print_numbers - fonction that prints the number from 0 to 9
-** @i: char to print
 * Return: no return
 *On error, O is returned, and errno is set appropriately.
 */
