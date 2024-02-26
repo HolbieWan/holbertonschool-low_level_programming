@@ -5,8 +5,7 @@
 *mul - fonction that checks for lowercase character
 ** @a: input variable
 ** @b: input variable
-** @c: The character to print
-* Return: On success 1.
+* Return: On success c.
 *On error, O is returned, and errno is set appropriately.
 */
 
