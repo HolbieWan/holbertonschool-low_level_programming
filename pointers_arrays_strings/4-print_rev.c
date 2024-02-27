@@ -2,7 +2,7 @@
 #include "2-strlen.c"
 
 /**
- * _puts - prints a string of char in reverse
+ * print_rev - prints a string of char in reverse
  *@s: input of function
  * Return: no return.
  */
