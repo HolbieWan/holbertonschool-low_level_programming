@@ -3,7 +3,7 @@
 
 /**
  * puts2 - prints every other char
- *@: no declaration
+ *@str: input of function
  * Return: no return.
  */
 
