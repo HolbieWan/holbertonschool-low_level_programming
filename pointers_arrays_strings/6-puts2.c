@@ -3,7 +3,7 @@
 
 /**
  * puts2 - prints every other char
- *@i: number of repetitions
+ *@: no declaration
  * Return: no return.
  */
 
