@@ -3,8 +3,9 @@
 #include "2-strlen.c"
 
 /**
- * _strcat - check the code
+ * _strcat - concatenates src to dest
  *@src: inpout string to concatenate
+ *@dest: string to add to dest
  * Return: Always 0.
  */
 char *_strcat(char *dest, char *src)
