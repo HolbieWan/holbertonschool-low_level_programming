@@ -23,7 +23,7 @@ int _atoi(char *s)
 		{
 			integer_value = (integer_value * 10) + (s[i] - '0');
 		}
-		else if (integer_value != 0)
+		else if(integer_value != 0)
 		{
 			break;
 		}
