@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include "2-strlen.c"
 
 /**
  * string_toupper - changes all lowercase letters of a string to uppercase
@@ -14,11 +13,15 @@ char *cap_string(char *str)
 
 	while (str[i] != ('\0'))
 	{
-		if ((str[i]) == (' '))
+		if ((str[i]) == ' ' || str[i] == '\n' || str[i] == '\t' || str[i] == ','
+            || str[i] == ';' || str[i] == '!' || str[i] == '?' || str[i] == '"'
+            || str[i] == '(' || str[i] == ')' || str[i] == '{' || str[i] == '}'
+			|| str[i] == '.' || str[i] == '\t')
 		{
-			if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
+			i++;
+			if (str[i] >= 'a' && str[i] <= 'z')
 			{
-				str[i + 1] = str[i + 1] - 32;
+				str[i] = str[i] - 32;
 			}
 		}
 		i++;
