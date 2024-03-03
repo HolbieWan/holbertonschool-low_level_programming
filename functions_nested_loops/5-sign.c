@@ -3,8 +3,7 @@
 /**
 *print_sign - fonction that prints the sign of a number.
 ** @n: The character to print
-* Return: On success 1.
-*On error, -1 is returned, and errno is set appropriately.
+* Return: -1, 0 or 1 depending on the value of n
 */
 
 int print_sign(int n)
@@ -24,5 +23,4 @@ int print_sign(int n)
 		_putchar(45);
 		return (-1);
 	}
-	return (0);
 }

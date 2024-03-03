@@ -3,7 +3,7 @@
 /*Déclaration des fonctions*/
 
 /**
-* main - main fonction that prints the text
+* main - main fonction that prints "_putchar"
 * Return: 0 if no problem
 */
 

@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
-*times_table - fonction that prints every minute of the day of Jack Bauer,
-** @: The character to print
-* Return: On success 1.
-*On error, -1 is returned, and errno is set appropriately.
+*times_table - fonction that prints prints the 9 times table, starting with 0
+**@: no arguments
+* Return: no return
 */
 
 void times_table(void)
@@ -30,8 +29,7 @@ void times_table(void)
 			{
 				_putchar('0' + result / 10);
 			}
-			_putchar('0' + result / 10);
-			_putchar();
+			_putchar('0' + result % 10);
 		}
 		_putchar('\n');
 	}

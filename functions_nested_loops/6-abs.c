@@ -3,8 +3,7 @@
 /**
 *_abs - fonction that computes the absolute value of an integer.
 ** @r: The character to print
-* Return: On success 1.
-*On error, -1 is returned, and errno is set appropriately.
+* Return: On success r.
 */
 
 int _abs(int r)
@@ -18,6 +17,4 @@ int _abs(int r)
 	{
 		return (r);
 	}
-
-	return (0);
 }

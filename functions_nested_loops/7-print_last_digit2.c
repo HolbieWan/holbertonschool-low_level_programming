@@ -10,17 +10,7 @@
 
 int print_last_digit(int r)
 {
-	if (r == INT_MIN)
-	{
-		r = 8;
-		_putchar('0' + r);
-		return (r);
-	}
-	else
-	{
-		r = _abs(r) % 10;
-		_putchar('0' + r);
-		return (r);
-	}
+	r = _abs(r % 10);
+	_putchar('0' + r);
 	return (r);
 }
