@@ -4,7 +4,7 @@
 /**
  * reset_to_98 - check the code
  *@n : input of function
- * Return: Always 0.
+ * Return: void
  */
 
 void reset_to_98(int *n)
