@@ -2,7 +2,7 @@
 #include "2-strlen.c"
 
 /**
- * leet - function that encodes a string with rot13
+ * rot13 - function that encodes a string with rot13
  *@str: input of function
  * Return: str
  */
