@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strpbrk - function that locates a substring
+ * _strstr - function that locates a substring
  * @haystack: the string to search through
  * @needle: the substriing to search for in *s
  * Return: a pointer to the beginning of the located substring,
