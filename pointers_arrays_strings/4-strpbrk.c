@@ -2,10 +2,11 @@
 #include "2-strlen.c"
 
 /**
- * _strspn - function that gets the length of a prefix substring
+ * _strpbrk - function that that searches a string for any of a set of bytes
  * @s: the string to search through
- * @accept: the char to find in *s
- * Return: (numbers_of_matching char until it encounters a non matching char)
+ * @accept: the chars to search for in *s
+ * Return: a pointer to the byte in s that matches one of the bytes in accept,
+ * or NULL if no such byte is found
  */
 
 char *_strpbrk(char *s, char *accept)
@@ -22,11 +23,6 @@ char *_strpbrk(char *s, char *accept)
 				return (s + i);
 			}
 		}
-		if (accept[j] == '\0')
-		{
-			return (NULL);
-			break;
-		}
 	}
-	return (s + i);
+	return (NULL);
 }
