@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _memcpy() function copies n bytes from memory area src to memory area dest
+ * _memcpy - function copies n bytes from memory area src to memory area dest
  * @dest: the address of memory to print
  * @src: the replacing string of src to copy in dest
  * @n: The number of bytes from memory area src to replace in dest
@@ -20,4 +20,3 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	}
 	return (dest);
 }
-
