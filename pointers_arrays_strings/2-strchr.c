@@ -12,7 +12,9 @@ char *_strchr(char *s, char c)
 {
 	int i = 0;
 	char *ps = s;
-	int lenght_s = _strlen(s);
+
+	if (s[i] == '\0')
+		return (0);
 
 	for (i = 0; ps[i] != '\0'; i++)
 	{
@@ -21,8 +23,6 @@ char *_strchr(char *s, char c)
 			return (ps + i);
 		}
 	}
-	if (lenght_s == 0)
-		return (0);
 
 	return (NULL);
 }
