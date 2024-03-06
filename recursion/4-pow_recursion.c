@@ -1,8 +1,10 @@
 #include "main.h"
 
 /**
- * _pow_recursion - function that returns the value of x raised to the power of y
- * @n: the number of times x i multiplied by himself
+ * _pow_recursion - function that returns the value
+ * of x raised to the power of y
+ * @x: the number to multiply by himself
+ * @y: the number of times x i multiplied by himself
  * Return: result
  */
 
