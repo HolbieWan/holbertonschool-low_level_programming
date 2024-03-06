@@ -12,12 +12,15 @@ char *_strchr(char *s, char c)
 {
 	int i = 0;
 	char *ps = s;
+	length_string = _strlen(s);
 
 	if (s[i] == '\0')
 		return (0);
 
 	if (c == '\0')
-		return (ps + i);
+	{
+		return (ps + length_string);
+	}
 
 	else
 	{
