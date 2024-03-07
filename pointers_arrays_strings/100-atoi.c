@@ -2,7 +2,7 @@
 #include "1-isdigit.c"
 
 /**
- * _atoi - prints a string of char in reverse
+ * _atoi - prints the first string of integer encountered
  *@s: input array
  * Return: an integer
  */
