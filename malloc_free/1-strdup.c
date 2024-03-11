@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- ** _strdup() - function that returns a pointer to a newly allocated space in memory,
+ ** _strdup - function that returns a pointer to a newly allocated space in memory,
  * which contains a copy of the string given as a parameter.
  * @str: the string to duplicate
  *
@@ -15,25 +15,22 @@ char *_strdup(char *str)
 	int length_str;
 	char *str_dup = NULL;
 
+	if (str == NULL)
+		return (NULL);
+
 	while (str[i] != 0)
 		i++;
 
 	length_str = i;
 
-	str_dup = (char *)malloc(sizeof(char) * length_str);
-
-	if (str_dup == NULL)
-		return (NULL);
-
 	if ((length_str) == 0)
 		return (NULL);
 
-	else
+	str_dup = (char *)malloc(sizeof(char) * length_str);
+
+	for (i = 0; i <= length_str; i++)
 	{
-		for (i = 0; i < length_str; i++)
-		{
-			str_dup[i] = str[i];
-		}
+		str_dup[i] = str[i];
 	}
 	return (str_dup);
 }
