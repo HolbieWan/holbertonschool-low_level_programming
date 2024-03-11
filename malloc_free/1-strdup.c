@@ -26,12 +26,15 @@ char *_strdup(char *str)
 	if ((length_str) == 0)
 		return (NULL);
 
-	str_dup = (char *)malloc(sizeof(char) * length_str);
+	str_dup = (char *)malloc(sizeof(char) * (length_str + 1));
 
 	for (i = 0; i < length_str; i++)
 	{
 		str_dup[i] = str[i];
 	}
+
+	str_dup[length_str] = '\0';
+
 	return (str_dup);
 	free (str_dup);
 }
