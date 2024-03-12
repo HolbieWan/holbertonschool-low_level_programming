@@ -28,8 +28,14 @@ char *str_concat(char *s1, char *s2)
 
 	length_str_concatenated = length_s1 + length_s2;
 
-	if ((length_str_concatenated) == 0)
+	if (length_str_concatenated == 0)
 		str_concatenated[0] = '\0';
+
+	if (length_s1 == 0)
+		str_concatenated = s2;
+
+	if (length_s2 == 0)
+		str_concatenated = s1;
 
 	for (i = 0; i < length_s1; i++)
 	{
