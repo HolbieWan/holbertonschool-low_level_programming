@@ -31,12 +31,6 @@ char *str_concat(char *s1, char *s2)
 	if (length_str_concatenated == 0)
 		str_concatenated[0] = '\0';
 
-	if (length_s1 == 0)
-		str_concatenated = s2;
-
-	if (length_s2 == 0)
-		str_concatenated = s1;
-
 	for (i = 0; i < length_s1; i++)
 	{
 		str_concatenated[i] = s1[i];
@@ -45,6 +39,11 @@ char *str_concat(char *s1, char *s2)
 	{
 		str_concatenated[i + j] = s2[j];
 	}
+	if (length_s1 == 0)
+		str_concatenated[j + 1] = '\0';
+
+	if (length_s2 == 0)
+		str_concatenated[i + 1] = '\0';
 
 	str_concatenated[length_str_concatenated + 1] = '\0';
 
