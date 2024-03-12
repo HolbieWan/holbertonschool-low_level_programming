@@ -10,42 +10,35 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i = 0, j = 0, length_s1, length_s2, length_str_concatenated;
+	int i = 0, j = 0, length_s1 = 0, length_s2 = 0;
 	char *str_concatenated = NULL;
 
-	while (s1[i] != '\0')
-		i++;
-	length_s1 = i;
+	if (s1 != NULL)
+	{
+		while (s1[length_s1] != '\0')
+			length_s1++;
+	}
+	if (s2 != NULL)
+	{
+		while (s2[length_s2] != '\0')
+			length_s2++;
+	}
 
-	while (s2[j] != '\0')
-		j++;
-	length_s2 = j;
-
-	str_concatenated = (char *)malloc(sizeof(char) * (length_s1 + length_s2 + 1));
-
-	if ((str_concatenated) == 0)
+	str_concatenated = (char *)malloc((length_s1 + length_s2 + 1) * sizeof(char));
+	if (str_concatenated == NULL)
 		return (NULL);
-
-	length_str_concatenated = length_s1 + length_s2;
-
-	if (length_str_concatenated == 0)
-		str_concatenated[0] = '\0';
 
 	for (i = 0; i < length_s1; i++)
 	{
 		str_concatenated[i] = s1[i];
 	}
+
 	for (j = 0; j < length_s2; j++)
 	{
 		str_concatenated[i + j] = s2[j];
 	}
-	if (length_s1 == 0)
-		str_concatenated[j + 1] = '\0';
 
-	if (length_s2 == 0)
-		str_concatenated[i + 1] = '\0';
-
-	str_concatenated[length_str_concatenated + 1] = '\0';
+	str_concatenated[i + j] = '\0';
 
 	return (str_concatenated);
 }
