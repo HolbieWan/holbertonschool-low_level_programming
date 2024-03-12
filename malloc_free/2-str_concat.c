@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- ** _strdup - function that concatenates two strings
+ ** *str_concat - function that concatenates two strings
  * @s1: the 1rst string
  * @s2: the string to be concatenated
  * Return: a pointer to the concatenated string or Null on failure.
@@ -12,9 +12,6 @@ char *str_concat(char *s1, char *s2)
 {
 	int i = 0, j = 0, length_s1, length_s2, length_str_concatenated;
 	char *str_concatenated = NULL;
-
-	if (s1 == NULL || s2 == NULL)
-		return (NULL);
 
 	while (s1[i] != '\0')
 		i++;
