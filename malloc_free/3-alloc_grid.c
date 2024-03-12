@@ -3,49 +3,34 @@
 #include <stdlib.h>
 
 /**
- ** *str_concat - function that concatenates two strings
- * @s1: the 1rst string
- * @s2: the string to be concatenated
- * Return: a pointer to the concatenated string or Null on failure.
+ ** **alloc_grid - function that returns a pointer
+ * to a 2 dimensional array of integers
+ * @width: The height of the grid
+ * @height: the width of the grid
+ * Return: returns a pointer to a 2 dimensional array
+ * of integers or Null on failure.
  */
-char *str_concat(char *s1, char *s2)
+int **alloc_grid(int width, int height)
 {
-	int i = 0, j = 0, length_s1, length_s2, length_str_concatenated;
-	char *str_concatenated = NULL;
+	int i = 0, j = 0;
+	int **array;
 
-	while (s1[i] != '\0')
-		i++;
-	length_s1 = i;
-
-	while (s2[j] != '\0')
-		j++;
-	length_s2 = j;
-
-	str_concatenated = (char *)malloc(sizeof(char) * (length_s1 + length_s2 + 1));
-
-	if ((str_concatenated) == 0)
+	array = malloc(height * sizeof(int *));
+	if (array == NULL)
 		return (NULL);
 
-	length_str_concatenated = length_s1 + length_s2;
-
-	if (length_str_concatenated == 0)
-		str_concatenated[0] = '\0';
-
-	for (i = 0; i < length_s1; i++)
+	for (i = 0; i < height; i++)
 	{
-		str_concatenated[i] = s1[i];
+		array[i] = malloc(width * sizeof(int));
+		if (array[i] == NULL)
+			return (NULL);
 	}
-	for (j = 0; j < length_s2; j++)
+
+	for (i = 0; i < height; i++)
 	{
-		str_concatenated[i + j] = s2[j];
+		for (j = 0; j < width; j++)
+			array[i][j] = 0;
 	}
-	if (length_s1 == 0)
-		str_concatenated[j + 1] = '\0';
 
-	if (length_s2 == 0)
-		str_concatenated[i + 1] = '\0';
-
-	str_concatenated[length_str_concatenated + 1] = '\0';
-
-	return (str_concatenated);
+	return (array);
 }
