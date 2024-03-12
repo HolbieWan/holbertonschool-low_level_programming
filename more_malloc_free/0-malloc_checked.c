@@ -4,21 +4,18 @@
 
 /**
  ** *malloc_checked - function that allocates memory using malloc
- * @b: the size of an unsigned int
+ * @b: the value of an unsigned int
  *
  * Return: Pointer to pointer to the allocated memory or 98 if fails
  */
 void *malloc_checked(unsigned int b)
 {
-	unsigned int *ptr = NULL;
+	void *ptr = NULL;
 
-	ptr = malloc(sizeof(b));
+	ptr = malloc(b);
 
 	if (ptr == NULL)
-	{
-		*ptr = 98;
-		return (ptr);
-	}
-	else
-		return (ptr);
+		exit(98);
+
+	return (ptr);
 }
