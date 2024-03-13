@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <limits.h>
 
 /**
  * _calloc - function that allocates memory for an array, using malloc
@@ -28,7 +27,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		for (i = 0; i < nmemb * size; i++)
 		{
-			calloc[i] = 0;
+			*((char *)calloc + i) = 0;
 		}
 	}
 	return (calloc);
