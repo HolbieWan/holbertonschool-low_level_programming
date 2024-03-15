@@ -32,3 +32,27 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	}
 	return (calloc);
 }
+
+/*
+{
+	unsigned int i;
+	char *calloc = NULL;
+
+	if (size == 0 || nmemb == 0)
+		return (NULL);
+
+	calloc = malloc(nmemb * size);
+
+	if (calloc == NULL)
+		return (NULL);
+
+	else
+	{
+		for (i = 0; i < nmemb * size; i++)
+		{
+			calloc[i]  = '\0';
+		}
+	}
+	return (calloc);
+}
+*/
