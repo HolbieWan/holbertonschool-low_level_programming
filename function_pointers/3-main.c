@@ -4,6 +4,8 @@
 
 /**
  * main - check the code
+ * @argc: The number of arguments in argv array
+ * @argv: The array of argc elements
  *
  * Return: Always 0.
  */
