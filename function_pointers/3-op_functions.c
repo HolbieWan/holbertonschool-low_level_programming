@@ -3,7 +3,7 @@
 #include "3-calc.h"
 
 /**
- * int_index - function that that searches for an integer
+ * op_add - function that calculate the somme of 2 integers
  * @a: integer
  * @b: integer
  *
@@ -18,7 +18,7 @@ int op_add(int a, int b)
 }
 
 /**
- * int_index - function that that searches for an integer
+ * op_sub - function that calculate the difference of 2 integers
  * @a: integer
  * @b: integer
  *
@@ -33,7 +33,7 @@ int op_sub(int a, int b)
 }
 
 /**
- * int_index - function that that searches for an integer
+ * op_mul - function that calculate the multiplication of 2 integers
  * @a: integer
  * @b: integer
  *
@@ -48,7 +48,7 @@ int op_mul(int a, int b)
 }
 
 /**
- * int_index - function that that searches for an integer
+ * op_div - function that calculate the dividing of 2 integers
  * @a: integer
  * @b: integer
  *
@@ -57,16 +57,16 @@ int op_mul(int a, int b)
 int op_div(int a, int b)
 {
 	if (b == 0)
-		{
-			printf("Error\n");
-			exit(100);
-		}
-		else
-			return (a / b);
+	{
+		printf("Error\n");
+		exit(100);
+	}
+	else
+		return (a / b);
 }
 
 /**
- * int_index - function that that searches for an integer
+ * op_mod - function that calculate the modulo of 2 integers
  * @a: integer
  * @b: integer
  *
@@ -75,10 +75,10 @@ int op_div(int a, int b)
 int op_mod(int a, int b)
 {
 	if (b == 0)
-		{
-			printf("Error\n");
-			exit(100);
-		}
-		else
-			return (a % b);
+	{
+		printf("Error\n");
+		exit(100);
+	}
+	else
+		return (a % b);
 }
