@@ -39,7 +39,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		s = va_arg(args, char*);
 		if (s == 0)
-			printf("(nil)");
+			printf("(nil)\n");
 		else
 			printf("%s\n", s);
 
