@@ -89,9 +89,9 @@ void print_all(const char * const format, ...)
 		{"s", print_str}
 	};
 
-	int i = 0;
-	int j;
-	char *separator = ", ";
+	unsigned int i = 0;
+	unsigned int j;
+	char *separator = "";
 
 	va_list args;
 
@@ -107,8 +107,10 @@ void print_all(const char * const format, ...)
 		}
 		if (j < 4)
 		{
-			pr_all[j].print_func(args);
 			printf("%s", separator);
+			pr_all[j].print_func(args);
+			separator = ", ";
+
 		}
 		i++;
 	}
