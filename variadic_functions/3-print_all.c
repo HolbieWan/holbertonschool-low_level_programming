@@ -102,7 +102,7 @@ void print_all(const char * const format, ...)
 	{
 		j = 0;
 
-		while ( pr_all[j].type != NULL && (format[i] != pr_all[j].type[0]))
+		while (pr_all[j].type != NULL && (format[i] != pr_all[j].type[0]))
 		{
 			j++;
 		}
