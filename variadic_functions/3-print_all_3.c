@@ -3,10 +3,10 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 
-void print_char(va_list *args);
-void print_integers(va_list *args);
-void print_float(va_list *args);
-void print_str(va_list *args);
+void print_char(va_list args);
+void print_integers(va_list args);
+void print_float(va_list args);
+void print_str(va_list args);
 void print_all(const char * const format, ...);
 
 /**
@@ -15,11 +15,11 @@ void print_all(const char * const format, ...);
  *
  * Return: void
  */
-void print_char(va_list *args)
+void print_char(va_list args)
 {
 	char ch;
 
-	ch = va_arg(*args, int);
+	ch = va_arg(args, int);
 
 	printf("%c", ch);
 }
@@ -30,11 +30,11 @@ void print_char(va_list *args)
  *
  * Return: void
  */
-void print_integers(va_list *args)
+void print_integers(va_list args)
 {
 	int in;
 
-	in = va_arg(*args, int);
+	in = va_arg(args, int);
 
 	printf("%d", in);
 }
@@ -45,11 +45,11 @@ void print_integers(va_list *args)
  *
  * Return: void
  */
-void print_float(va_list *args)
+void print_float(va_list args)
 {
 	double fl;
 
-	fl = va_arg(*args, double);
+	fl = va_arg(args, double);
 
 	printf("%f", fl);
 }
@@ -60,11 +60,11 @@ void print_float(va_list *args)
  *
  * Return: void
  */
-void print_str(va_list *args)
+void print_str(va_list args)
 {
 	char *str;
 
-	str = va_arg(*args, char *);
+	str = va_arg(args, char *);
 
 	if (str == NULL)
 	{
@@ -86,8 +86,7 @@ void print_all(const char * const format, ...)
 		{"c", print_char},
 		{"i", print_integers},
 		{"f", print_float},
-		{"s", print_str},
-		{NULL, NULL}
+		{"s", print_str}
 	};
 
 	unsigned int i = 0;
@@ -102,15 +101,16 @@ void print_all(const char * const format, ...)
 	{
 		j = 0;
 
-		while ( pr_all[j].type != NULL && (format[i] != pr_all[j].type[0]))
+		while (format[i] != 0 && j < 4 && (format[i] != pr_all[j].type[0]))
 		{
 			j++;
 		}
-		if (pr_all[j].type != NULL)
+		if (j < 4)
 		{
 			printf("%s", separator);
-			pr_all[j].print_func(&args);
+			pr_all[j].print_func(args);
 			separator = ", ";
+
 		}
 		i++;
 	}

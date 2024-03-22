@@ -86,8 +86,7 @@ void print_all(const char * const format, ...)
 		{"c", print_char},
 		{"i", print_integers},
 		{"f", print_float},
-		{"s", print_str},
-		{NULL, NULL}
+		{"s", print_str}
 	};
 
 	unsigned int i = 0;
@@ -102,15 +101,16 @@ void print_all(const char * const format, ...)
 	{
 		j = 0;
 
-		while ( pr_all[j].type != NULL && (format[i] != pr_all[j].type[0]))
+		while (format[i] != 0 && j < 4 && (format[i] != pr_all[j].type[0]))
 		{
 			j++;
 		}
-		if (pr_all[j].type != NULL)
+		if (j < 4)
 		{
 			printf("%s", separator);
-			pr_all[j].print_func(&args);
+			pr_all[j].print_func(args);
 			separator = ", ";
+
 		}
 		i++;
 	}
