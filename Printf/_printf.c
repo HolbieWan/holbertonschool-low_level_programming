@@ -103,15 +103,7 @@ int (*_print_format(const char *specifier))(va_list*)
 		{NULL, NULL}
 	};
 	unsigned int i = 0;
-    /*while (print_specifier[i].specifier != NULL)
-    {
-        if (*specifier == print_specifier[i].specifier[0])
-        {
-            break;
-        }
-        i++;
-    }
-    return (print_specifier[i].select_function);*/
+
 if (*specifier != 'c' && *specifier != 's' && *specifier != 'd' && *specifier != 'f')
 	{
 		printf("Error\n");
