@@ -1,4 +1,4 @@
-#include "print_all.h"
+#include "main.h"
 
 /**
  * main - check the code
@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-    print_all2("ceisppc", 'B', 3, "stSchool", 'T');
+    _printf("Test %f %g %c, %d, %s, %%", 'B', 3, "stSchool");
     return (0);
 }
