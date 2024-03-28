@@ -83,9 +83,9 @@ int print_number(long int n)
 		char_count = 1;
 		return (char_count);
 	}
+	
 	if (n / 10)
 	{
-
 		char_count += print_number(n / 10);
 	}
 
