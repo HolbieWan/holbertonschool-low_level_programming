@@ -12,8 +12,8 @@ int main(void)
 	_printf("%b\n", 98);
 	printf("%b\n", 98);
 
-	_printf("%b\n", -6);
-	printf("%b\n", -6);
+	_printf("%b\n", -1024);
+	printf("%b\n", -1024);
 
 	return (0);
 }

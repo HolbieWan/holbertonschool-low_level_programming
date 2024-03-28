@@ -25,17 +25,9 @@ int print_i(va_list *args)
  * containing the integers to print
  * Return: number of char printed (bytes)
  */
-int print_binary(int n)
+int print_binary(unsigned int n)
 {
 	int char_count = 0;
-
-	if (n < 0)
-	{
-		_putchar('1');
-		char_count++;
-
-		n = ~n + 1;
-	}
 
 	if (n == 0)
 	{
@@ -44,14 +36,16 @@ int print_binary(int n)
 		return (char_count);
 	}
 
-	if (n / 2 != 0)
+	else
 	{
-		char_count += print_binary(n / 2);
+		if (n / 2 != 0)
+		{
+			char_count += print_binary(n / 2);
+		}
+
+		_putchar(n % 2 + '0');
+		char_count++;
 	}
-
-	_putchar(n % 2 + '0');
-	char_count++;
-
 	return (char_count);
 }
 

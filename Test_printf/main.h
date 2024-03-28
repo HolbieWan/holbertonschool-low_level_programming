@@ -10,7 +10,7 @@ int print_str(va_list *args);
 int print_int(va_list *args);
 int print_number(long int n);
 int print_i(va_list *args);
-int print_binary(int n);
+int print_binary(unsigned int n);
 int print_b(va_list *args);
 
 int _printf(const char *format, ...);
