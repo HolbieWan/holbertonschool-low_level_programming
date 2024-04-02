@@ -1,22 +1,18 @@
 #include "lists.h"
 
-int _strlen(const char *s);
-
 /**
- * free_list - function that frees a list_t list
+ * free_list - function frees a dlistint_t list
  * @head: pointer to the head node of the list
  * Return: void
  */
-void free_list(list_t *head)
+void free_dlistint(dlistint_t *head)
 {
 
-	list_t *next;
-
+	dlistint_t *next;
 
 	while (head != NULL)
 	{
 		next = head->next;
-		free(head->str);
 		free(head);
 		head = next;
 	}
