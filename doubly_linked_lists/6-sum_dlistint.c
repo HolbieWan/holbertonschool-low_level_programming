@@ -16,8 +16,8 @@ int sum_dlistint(dlistint_t *head)
 
 	while (current_node->next != NULL)
 	{
-		current_node = current_node->next;
 		count += current_node->n;
+		current_node = current_node->next;
 	}
 	return (count);
 }
