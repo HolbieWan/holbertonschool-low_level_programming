@@ -1,7 +1,5 @@
 #include "lists.h"
 
-int _strlen(const char *s);
-
 /**
  * free_list - function that frees a list_t list
  * @head: pointer to the head node of the list
