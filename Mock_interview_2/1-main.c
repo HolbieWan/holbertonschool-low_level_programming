@@ -3,7 +3,7 @@
 #include <string.h>
 
 
-void _print_rev_recursion(char *s)
+void _print_rev(char *s)
 {
 	int i;
 	int lenghts = 0;
@@ -17,8 +17,6 @@ void _print_rev_recursion(char *s)
 	putchar('\n');
 }
 
-
-
 /**
  * main - check the code
  *
@@ -30,13 +28,11 @@ int main(void)
     return (0);
 }
 
-/*int strleng = 0;
-	int i = 0;
+/*void _print_rev_recursion(char *s)
+{
+    if (*s == '\0')
+        return;
 
-	while (s[i] != '\0')
-	{
-		strleng++;
-	}
-
-	putchar(strleng + '0');
-	putchar('\n');*/
+    _print_rev_recursion(s + 1);
+    putchar(*s);
+}*/
