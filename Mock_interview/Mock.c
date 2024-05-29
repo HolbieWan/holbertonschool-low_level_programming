@@ -6,6 +6,7 @@ int main()
     int i;
 	int j;
 	int k;
+	int counter = 0;
 
 	{
 		for (i = 0; i <= 9; i++)
@@ -15,8 +16,18 @@ int main()
 					putchar('0' + i);
 					putchar('0' + j);
 					putchar('0' + k);
-					putchar(',');
-					putchar(' ');
+					counter += 1;
+
+					if (counter == 1000)
+					{
+						putchar('\n');
+						break;
+					}
+					else
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 	}
     return(0);
