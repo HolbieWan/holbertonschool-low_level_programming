@@ -9,7 +9,8 @@ char *_strcpy(char *dest, char *src)
 	{
 		dest[i] = src[i];
 	}
-	printf("%s\n", dest);
+
+	return dest;
 }
 
 int main(void)

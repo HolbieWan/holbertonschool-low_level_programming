@@ -10,3 +10,5 @@ def average(my_list=[]):
     moyen = (sum / l)
 
     return moyen
+
+print(average([1, 2, 3, 4, 5]))

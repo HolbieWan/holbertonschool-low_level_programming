@@ -7,3 +7,5 @@ def max_integer(my_list=[]):
             max = my_list[i]
         
     return max
+
+print(max_integer([1, 2, 8, 4, 5]))
