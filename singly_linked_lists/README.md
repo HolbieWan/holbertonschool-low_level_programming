@@ -1,9 +1,4 @@
-# Learning Objectives
-<br>
-To be able to explain to anyone, without the help of Google:
-<br>
+# C - Singly linked lists
 
-## When and why using linked lists vs arrays
-<br>
-
-## How to build and use linked lists
++ When and why using linked lists vs arrays
++ How to build and use linked lists

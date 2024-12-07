@@ -1,9 +1,5 @@
-# Learning Objectives
-<br>
-To be able to explain to anyone, without the help of Google:
-<br>
+# C - Doubly linked lists
 
-## When and why using linked lists vs arrays
-<br>
-
-## How to build and use linked lists
++ What is a doubly linked list
++ How to use doubly linked lists
++ Start to look for the right source of information without too much help
